@@ -24,10 +24,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      <p>This site captures the recent update history of <b>b4brathay</b>.org.uk and where the project is up to as of November 2021</p>
-      <p>To get further updates please subscribe to our <a href="https://b4brathay.us2.list-manage.com/subscribe?u=9e91f6443a36b56e63c2bf0c3&id=44b45d3a47" target="_blank" rel="noreferrer">mailing list</a>.
-        To contact us please email <a href="mailto:info@b4brathay.org.uk" target="_blank" rel="noreferrer">info@b4brathay.org.uk</a>
-      </p>
+ 
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

@@ -13,4 +13,4 @@ RUN yarn install
 COPY . .
 RUN yarn run test
 
-CMD [ "sh", "-c", "yarn start" ]
+CMD [ "sh", "-c", "yarn serve" ]
