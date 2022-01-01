@@ -11,6 +11,6 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 RUN yarn install
 COPY . .
-RUN yarn run test
+RUN yarn build
 
 CMD [ "sh", "-c", "yarn serve" ]
