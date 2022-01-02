@@ -13,4 +13,4 @@ RUN yarn install
 COPY . .
 RUN yarn build
 
-CMD [ "sh", "-c", "yarn serve" ]
+CMD [ "sh", "-c", "yarn serve --port $PORT --host 0.0.0.0" ]
