@@ -15,6 +15,7 @@ const BlogPostTemplate = ({ data, location }) => {
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        publishDate={(new Date(post.frontmatter.date).toISOString())}
       />
       <article
         className="blog-post"
