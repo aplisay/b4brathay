@@ -41,13 +41,13 @@ There are a few different major standards for representing location coordinates:
 
  One of the fun attributes of Plus Codes is that the main Open Source library, provided by Google, and their implementation in Google Maps support the concept of a relative codes where the alphanumeric part is coupled with a placename which is used in place of the most significant digits, so that:
 
- __9C3XGWG8+7G__, becomes the much more mangeable __GWG8+7G, London, England__. In fact the number of digits stripped is variable and depends how close the location being exressed is to the reference point, so the above can be further shortened to: __G8+7G, Hoxton, England__. This is now starting to look very doable.
+ __9C3XGWG8+7G__, becomes the much more mangeable __GWG8+7G, London, England__. In fact the number of digits stripped is variable and depends how close the location being exressed is to the reference point, so the above can be further shortened to: __G8+7G, Hoxton, England__. This is now starting to look fairly concise  .
 
  ## Spelling them out phonetically
 
  Of course a web page or application that is aware of the users location can give that to a user spelt out phonetically and ready to be read to the operator: __Golf Eight Plus Seven Golf Victor, Hoxton, England__.
 
- In many ways, it is a feature that a local placename is part of the text read out as it should alert both the user and the operator situationally, and give an opportunity to query any gross location discrepencies. It could however be problematic where has no real idea where they are and has issues clearly pronouncing this placename, so an option to change the placename reference to a different one needs to be part of the application. In this way, a user can toggle through alternative ways to express their location until they find one that is easy to express:
+ In many ways, it is a feature that a local placename is part of the text read out as it should alert both the user and the operator situationally, and give an opportunity to query any gross location discrepencies. It could however be problematic where the user has no good idea where they are and has issues pronouncing this placename. An option to change the placename reference to a different one needs to be part of the application. A user can toggle through alternative ways to express their location until they find one that is easy to express:
  `Hotel Juliet Plus Four Five Mike, Nunthorpe, England`
  `Golf Romeo Hotel Juliet Plus Four Five Mike, Ormesby, England`
  `Golf Romeo Hotel Juliet Plus Four Five Mike, Middlesbrough, England`
